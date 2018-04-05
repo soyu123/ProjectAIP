@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RootNamespace>ProjectAIP.Services</RootNamespace>
+    <AssemblyName>ProjectAIP.Services</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DataAccessLayer.Core.EntityFramework" Version="1.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectAIP.BLL\ProjectAIP.BLL.csproj" />
+    <ProjectReference Include="..\ProjectAIP.DAL\ProjectAIP.DAL.csproj" />
+    <ProjectReference Include="..\ProjectAIP.Utilities\ProjectAIP.Utilities.csproj" />
+    <ProjectReference Include="..\ProjectAIP.ViewModels\ProjectAIP.ViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Text.Encodings.Web">
+      <HintPath>..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\system.text.encodings.web\4.4.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
